@@ -18,7 +18,7 @@ builder.Services.AddScoped<EmployeeRepository>();
 // Register the FluentValidation validator
 //builder.Services.AddScoped<IValidator<Employee>, EmployeeValidator>();
 
-// Automatically register all FluentValidation validators using reflection instead of manual registration
+//Automatically register all FluentValidation validators using reflection instead of manual registration
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 builder.Services.AddEndpointsApiExplorer();
